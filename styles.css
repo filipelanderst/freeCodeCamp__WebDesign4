@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  background-color: #292937;
+}
+
+html,
+body {
+  min-width: 18rem;
+  font-family: "Inconsolata";
+  line-height: 1.5;
+  text-align: justify;
+  hyphens: auto;
+  color: #b7b7b7;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+
+.logo img {
+  width: 10%;
+  height: 10%;
+
+  padding-right: 0.5rem;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 18rem;
+  top: 0px;
+  left: 0px;
+  width: 18rem;
+  height: 100%;
+  border-right: solid;
+  border-color: #555;
+}
+
+header {
+  color: #222;
+  font-weight: 500;
+  margin: 0.5rem;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+  font-family: "montserrat";
+  color: #d5d5d5;
+  font-size: 1.25rem;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #444;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: #d5d5d5;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 20rem;
+  padding: 1rem;
+  margin-bottom: 7rem;
+}
+
+section article {
+  margin: 1rem;
+  font-size: 0.96em;
+}
+
+section li {
+  margin-top: 1rem;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #252430;
+  font-size: 0.75rem;
+  color: #d5d5d5;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 13rem;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 17rem;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 17rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -0.5rem;
+  }
+
+  code {
+    margin-left: -1rem;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 3rem;
+    min-width: 15rem;
+  }
+}
